@@ -92,7 +92,18 @@ footer p {
     transition: transform 0.3s ease;
     box-sizing: border-box;
 }
-
+.container3 {  width: calc(100% - 20px);
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url('wp1.jpg') center center / cover no-repeat fixed;
+}
 .container2:hover {
     transform: scale(1.05);
     cursor: pointer;
@@ -212,6 +223,10 @@ footer p {
         justify-content: center;
         flex-wrap: wrap;
         background: url('wp1.jpg') center center / cover no-repeat fixed;
+        
+    }
+    .container3 { 
+        display: none;
     }
     .container2 { 
         width: 100%;
@@ -234,15 +249,20 @@ footer p {
         padding: 20px;
     }
     .resume-container {
-        padding: 20px;
-        overflow: auto;
+        display: none;
     }
 
-    .pdf-iframe {
-        height: auto;
-        overflow: auto;
+    .resume-page {
+        display: none;
     }
+    .pdf-download-link {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 20px
+        
     }
+}
 }
 .resume-container {
     width: 100%;
@@ -258,6 +278,11 @@ footer p {
     background: url('wp1.jpg') center center / cover no-repeat fixed;
     overflow: auto;
 }
+@media only screen and (min-width: 769px) {
+.pdf-download-link {
+    display: none
+}
+}
 
 .pdf-iframe {
     width: 150%;
@@ -272,9 +297,3 @@ footer p {
 .page-exit {
     opacity: 0;
 }
-
-
-
-
-
-
