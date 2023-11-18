@@ -1,0 +1,237 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background: url('wp1.jpg') center center / cover no-repeat fixed;
+    
+}
+
+header {
+    background: url('wp1.jpg') center center / cover no-repeat fixed;
+    padding: 20px;
+    text-align: center
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.toggle-switch {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: url('wp1.jpg') center center / cover no-repeat fixed;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    background: url('wp1.jpg') center center / cover no-repeat fixed;
+        padding: 20px;
+        text-align: center;
+        color: #fff;}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        background: url('wp1.jpg') center center / cover no-repeat fixed;
+
+
+}
+
+.skill-item {
+    width: calc(50% - 20px);
+    padding: 20px;
+    background: url('mf.webp') center center / cover no-repeat fixed;
+    border: 1px solid #000000;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+.container2 {
+    width: calc(50% - 20px);
+    padding: 20px;
+    background: url('bkg.jpg') center center / cover no-repeat fixed;
+    border: 1px solid #000000;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.container2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.skill-blurb {
+    display: none;
+}
+
+.skill-item:hover .skill-blurb {
+    display: block;
+}
+.container { width: calc(100% - 20px);
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url('wp1.jpg') center center / cover no-repeat fixed;
+}
+
+.dark-mode body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #212121;
+}
+
+.dark-mode nav a {
+    color: #ffffff;
+}
+
+.dark-mode .toggle-switch {
+    background-color: #3d3d3d;
+}
+
+.dark-mode main {
+    background-color: #212121;
+}
+
+.dark-mode footer {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 2px;
+    top: 1px;
+    transition: transform 0.3s;
+}
+
+.dark-mode .toggle-switch {
+    background-color: #757575;
+}
+
+.dark-mode .toggle-switch::before {
+    transform: translateX(20px);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+.resume-container {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('wp1.jpg') center center / cover no-repeat fixed;
+    overflow: auto;
+}
+
+.pdf-iframe {
+    width: 150%;
+    height: 800px;
+    
+}
+.page-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-exit {
+    opacity: 0;
+}
+
+
+
+
+
+

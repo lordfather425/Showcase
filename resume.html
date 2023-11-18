@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Gregory Green's Showcase</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <resume-page></resume-page>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Gregory Green</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+Vue.component('resume-page', {
+    template: `
+        <div class="resume-container">
+            <h2>Resume</h2>
+            <iframe src="GG11-23.pdf" class="pdf-iframe" frameborder="0"></iframe>
+        </div>
+    `
+});
+        new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+</html>
