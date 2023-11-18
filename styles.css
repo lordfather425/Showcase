@@ -235,7 +235,10 @@ footer p {
     }
     .resume-container {
         padding: 20px;
-        justify-content: center;
+    }
+
+    .pdf-iframe {
+        height: auto;
     }
     }
 }
