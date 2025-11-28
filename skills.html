@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Gregory Green's - Skills</title>
+    <title>Skills - Gregory Green</title>
 </head>
 <body>
-
     <header>
-        <h1>Gregory Green's Showcase</h1>
+        <div class="site-brand">
+            <h1>Gregory Green</h1>
+            <div class="tagline">ServiceNow Admin • ITAM • CMDB</div>
+        </div>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-    </header>    
-    <main>
-        <h2 class="skills-title" style="font-size: 2.5rem; color: #fff;">Skills</h2>
+        </ul>
+    </nav>
+</header>    <main>
+        <section class="container reveal-section">
+            <h2 class="page-title">My Skills</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">A comprehensive overview of my ServiceNow and IT expertise</p>
 
-        <div id="skills-container" class="skills-container">
-        </div>
+            <div id="skills-container" class="skills-container">
+            </div>
+        </section>
+    </main>
 
-        
-<script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 Gregory Green</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

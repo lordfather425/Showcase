@@ -11,18 +11,23 @@
 <body>
     <div id="app">
         <header>
-            <h1>Gregory Green's Showcase</h1>
+            <div class="site-brand">
+                <h1>Gregory Green</h1>
+                <div class="tagline">ServiceNow Admin • ITAM • CMDB</div>
+            </div>
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="skills.html">Skills</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-        <a class="pdf-download-link" href="GG11-23.pdf" target="_blank" rel="noopener noreferrer">RESUME DOWNLOAD</a>
-        <main>
-            <div class="container3">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+        </ul>
+        </nav>
+    </header>        <main>
+            <div class="container reveal-section">
+                <h2 class="page-title">Resume</h2>
+                <a class="btn" href="GG11-23.pdf" target="_blank" rel="noopener noreferrer" style="margin-bottom: 1rem; display: inline-block;">Download PDF Resume</a>
                 <resume-page></resume-page>
             </div>
         </main>
